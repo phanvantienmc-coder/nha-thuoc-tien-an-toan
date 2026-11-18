@@ -1,0 +1,13 @@
+#locthongke { margin: 28px 0 18px; }
+.locthongke { display: grid; grid-template-columns: 1fr 1fr 1fr auto; gap: 18px; align-items: end; }
+.locthongke label { display: grid; gap: 6px; min-width: 0; font-size: 14px; }
+.locthongke input, .locthongke select { width: 100%; min-width: 0; }
+#baothongke { color: #52675a; min-height: 26px; }
+.tongket { display: flex; flex-wrap: wrap; gap: 24px 60px; margin: 24px 0; padding: 20px 0; border-block: 1px solid #dce3dc; }
+.tongket dt { color: #52675a; font-size: 14px; }
+.tongket dd { margin: 6px 0 0; font-size: 25px; font-weight: 600; color: #205940; font-variant-numeric: tabular-nums; }
+.canhbao { color: #75501b; background: #f5ecd8; padding: 14px 18px; border-radius: 4px; }
+.quanly caption { text-align: left; color: #52675a; margin: 18px 0 10px; font-size: 14px; }
+.quanly #bangthongke tr td:nth-child(2) { min-width: 80px; }
+@media (max-width: 760px) { .locthongke { grid-template-columns: 1fr 1fr; } .tongket { gap: 24px 36px; } }
+@media (max-width: 420px) { .locthongke { grid-template-columns: 1fr; } }

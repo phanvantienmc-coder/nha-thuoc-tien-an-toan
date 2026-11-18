@@ -1,0 +1,8 @@
+﻿.dangnhap { max-width: 520px; padding: 48px 24px 80px; }
+.dangnhap > p:first-child { font-size: 12px; letter-spacing: 1px; color: #52675a; }
+.dangnhap h1 { font-size: 30px; margin: 12px 0; }
+.dangnhap form { margin: 28px 0; }
+.dangnhap label { display: block; margin: 18px 0 8px; }
+.dangnhap input, .dangnhap button { width: 100%; }
+.dangnhap button { margin-top: 24px; }
+#baodangnhap { min-height: 24px; color: #943b27; }

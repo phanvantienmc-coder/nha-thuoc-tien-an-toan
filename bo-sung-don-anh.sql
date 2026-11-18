@@ -1,0 +1,26 @@
+-- Chạy trong QLBANTHUOC. Giữ nguyên dữ liệu cũ; NULL là đơn cũ chưa xác định trạng thái.
+IF COL_LENGTH('dbo.HOADON', 'TRANGTHAI') IS NULL
+  ALTER TABLE dbo.HOADON ADD TRANGTHAI VARCHAR(16) NULL
+    CONSTRAINT DF_HOADON_TRANGTHAI DEFAULT ('hoan_thanh')
+    CONSTRAINT CK_HOADON_TRANGTHAI CHECK (TRANGTHAI IN ('cho_xu_ly','hoan_thanh','da_huy'));
+IF COL_LENGTH('dbo.THUOC', 'ANH') IS NULL
+  ALTER TABLE dbo.THUOC ADD ANH NVARCHAR(255) NULL;
+
+-- Thanh toán là hoàn thành; giữ nguyên những đơn đã hủy trước đây.
+UPDATE dbo.HOADON SET TRANGTHAI='hoan_thanh'
+WHERE TRANGTHAI IS NULL OR TRANGTHAI='cho_xu_ly';
+IF EXISTS (SELECT 1 FROM sys.default_constraints
+  WHERE parent_object_id=OBJECT_ID('dbo.HOADON') AND name='DF_HOADON_TRANGTHAI'
+    AND definition LIKE '%cho_xu_ly%')
+BEGIN
+  ALTER TABLE dbo.HOADON DROP CONSTRAINT DF_HOADON_TRANGTHAI;
+  ALTER TABLE dbo.HOADON ADD CONSTRAINT DF_HOADON_TRANGTHAI DEFAULT ('hoan_thanh') FOR TRANGTHAI;
+END;
+
+-- Nhớ số lớn nhất để xóa hóa đơn cuối không làm cấp lại mã đã dùng.
+IF OBJECT_ID('dbo.SoHoaDonWeb', 'U') IS NULL
+  CREATE TABLE dbo.SoHoaDonWeb (ID INT PRIMARY KEY CHECK(ID=1), SOCUOI BIGINT NOT NULL);
+IF NOT EXISTS (SELECT 1 FROM dbo.SoHoaDonWeb WHERE ID=1)
+  INSERT dbo.SoHoaDonWeb(ID,SOCUOI)
+  SELECT 1,COALESCE(MAX(TRY_CONVERT(BIGINT,SUBSTRING(RTRIM(SOHD),3,8))),0)
+  FROM dbo.HOADON WHERE SOHD LIKE 'HD%';

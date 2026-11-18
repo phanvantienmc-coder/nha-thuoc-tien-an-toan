@@ -1,0 +1,51 @@
+﻿.kho { padding: 36px 32px; }
+.kho h1 { font-size: 32px; }
+.kho section > p { color: #486151; max-width: 75ch; }
+#baokho { min-height: 26px; font-weight: 600; }
+#baokho.loi { color: #943b27; }
+fieldset { margin: 0; padding: 24px; border: 1px solid #cdd9cc; border-radius: 4px; min-width: 0; }
+legend { padding: 0 8px; font-size: 20px; font-weight: 600; }
+.thongtinphieu { display: grid; grid-template-columns: 1fr 1fr 1.4fr; gap: 24px; margin-bottom: 24px; }
+.thongtinphieu label { display: grid; align-content: start; gap: 6px; font-size: 14px; min-width: 0; }
+.thongtinphieu input, .thongtinphieu select { min-width: 0; width: 100%; }
+.thongtinphieu small, .ghichukho { font-size: 13px; color: #52675a; }
+#sophieu { text-transform: uppercase; }
+.bangcuon { overflow-x: auto; margin-bottom: 18px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+caption { text-align: left; font-size: 17px; font-weight: 600; margin-bottom: 12px; }
+th { font-weight: 600; text-align: left; color: #36523f; background: #edf3eb; }
+th, td { padding: 12px 10px; border-bottom: 1px solid #dce3dc; vertical-align: middle; }
+td:first-child, th:first-child { min-width: 210px; }
+td select { width: 100%; }
+td input { width: 120px; }
+td output { display: block; min-width: 110px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.nutphu { color: #205940; border-color: #b6c7b8; background: transparent; font-size: 14px; font-weight: 500; }
+.nutphu:hover { color: #163f2e; background: #e8efe6; border-color: #205940; }
+.luuphieu { display: flex; justify-content: space-between; align-items: center; gap: 20px; border-top: 1px solid #dce3dc; margin-top: 24px; padding-top: 16px; }
+#tongnhap { font-size: 25px; margin-left: 12px; color: #205940; font-variant-numeric: tabular-nums; }
+.lichsu { margin-top: 44px; }
+.lichsu .daumuc { margin-bottom: 12px; }
+.lichsu > p { font-size: 14px; }
+.timphieu { display: grid; grid-template-columns: 1.5fr 1fr 1fr auto; gap: 16px; align-items: end; margin-top: 24px; }
+.timphieu label { display: grid; gap: 6px; min-width: 0; font-size: 14px; }
+.timphieu input { width: 100%; min-width: 0; }
+#baotimphieu { min-height: 26px; }
+#baotimphieu.loi { color: #943b27; }
+#danhsachphieu details { border-bottom: 1px solid #dce3dc; }
+summary { padding: 16px 4px; cursor: pointer; font-size: 15px; }
+summary:hover { background: #edf3eb; }
+summary strong { margin-right: 16px; }
+summary span { margin-right: 16px; }
+summary:focus-visible { outline: 3px solid #9a6a17; outline-offset: 3px; }
+details .bangcuon { padding: 0 4px 12px; }
+@media (max-width: 760px) {
+  .kho { padding: 28px 20px; }
+  fieldset { padding: 16px; }
+  .thongtinphieu { grid-template-columns: 1fr; gap: 16px; }
+  .luuphieu { align-items: flex-start; flex-direction: column; gap: 8px; }
+  .luuphieu button { width: 100%; }
+  #tongnhap { display: block; margin-left: 0; }
+  summary span { display: block; margin-left: 20px; }
+  .timphieu { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 420px) { .timphieu { grid-template-columns: 1fr; } }

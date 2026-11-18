@@ -1,0 +1,62 @@
+{
+  "A02": {
+    "tep": "images/A02.jpg",
+    "nguon": "https://nhathuoclongchau.com.vn/thuoc/vitamin-c-500mg-1373.html",
+    "anhGoc": "https://cdn.nhathuoclongchau.com.vn/v1/static/00010179_vitamin_c_500mg_5282_5b92_large_bec5159b07.JPG",
+    "tenAnh": "Thuốc Vitamin C 500mg Vidipha điều trị bệnh do thiếu Vitamin C (100 viên)"
+  },
+  "B03": {
+    "tep": "images/B03.jpg",
+    "nguon": "https://nhathuoclongchau.com.vn/thuoc/babi-bon-12ml-vitamin-d-21147.html",
+    "anhGoc": "https://cdn.nhathuoclongchau.com.vn/v1/static/00020798_babi_bon_12ml_vitamin_d_5158_609b_large_091cd5b63e.jpg",
+    "tenAnh": "Dung dịch uống Babi B.O.N OPV phòng và điều trị các bệnh do thiếu vitamin D (12ml)"
+  },
+  "A03": {
+    "tep": "images/A03.jpg",
+    "nguon": "https://nhathuoclongchau.com.vn/thuoc/panadol-giam-dau-ha-sot-2716.html",
+    "anhGoc": "https://cdn.nhathuoclongchau.com.vn/v1/static/panadol_123_55f6e6e13c.jpg",
+    "tenAnh": "Viên nén Panadol 500mg GSK giảm đau, hạ sốt, điều trị đau đầu, đau cơ (10 vỉ x 12 viên)"
+  },
+  "C02": {
+    "tep": "images/C02.png",
+    "nguon": "https://nhathuoclongchau.com.vn/thuoc/bromhexin-8-4448.html",
+    "anhGoc": "https://cdn.nhathuoclongchau.com.vn/v1/static/bromhexin_8mg_10x20_f_t_00001435_8463c5b07f.png",
+    "tenAnh": "Thuốc Bromhexin 8mg Dược 3-2 tan đàm trong viêm khí phế quản, viêm phế quản mạn tính (10 vỉ x 20 viên)"
+  },
+  "B05": {
+    "tep": "images/B05.jpg",
+    "nguon": "https://nhathuoclongchau.com.vn/thuoc/berberin-4546.html",
+    "anhGoc": "https://cdn.nhathuoclongchau.com.vn/v1/static/berberin_0c5635b57e.jpg",
+    "tenAnh": "Thuốc Berberin 100mg Domesco điều trị nhiễm khuẩn đường ruột, tiêu chảy, kiết lỵ (100 viên)"
+  },
+  "C01": {
+    "tep": "images/C01.png",
+    "nguon": "https://nhathuoclongchau.com.vn/thuoc/amoxicillin-500mg-domesco-4734.html",
+    "anhGoc": "https://cdn.nhathuoclongchau.com.vn/v1/static/amoxicillin_500mg_10x10_domesco_00000740_4f06bb4231.png",
+    "tenAnh": "Thuốc Amoxicillin 500mg Domesco điều trị nhiễm khuẩn (10 vỉ x 10 viên)"
+  },
+  "B01": {
+    "tep": "images/B01.png",
+    "nguon": "https://nhathuoclongchau.com.vn/thuoc/vitamin-e-400-iu-opc-1750.html",
+    "anhGoc": "https://cdn.nhathuoclongchau.com.vn/v1/static/thuoc_vitamin_e_400iu_opc_4x10_00008036_a5222e71fa.png",
+    "tenAnh": "Thuốc Vitamin E 400IU OPC hỗ trợ điều trị thiếu Vitamin E (4 vỉ x 10 viên)"
+  },
+  "B02": {
+    "tep": "images/B02.png",
+    "nguon": "https://nhathuoclongchau.com.vn/thuoc/thuoc-ho-bao-thanh-125ml-496.html",
+    "anhGoc": "https://cdn.nhathuoclongchau.com.vn/v1/static/DSC_09075_a2549abf26.png",
+    "tenAnh": "Siro ho Bảo Thanh điều trị các chứng ho, viêm phổi (125ml)"
+  },
+  "B04": {
+    "tep": "images/B04.png",
+    "nguon": "https://nhathuoclongchau.com.vn/thuoc/oresol-245-dhg-20-goi-27857.html",
+    "anhGoc": "https://cdn.nhathuoclongchau.com.vn/v1/static/oresol_245_dhg_20_goi_00027541_6e1bdee3f2.png",
+    "tenAnh": "Bột pha uống Oresol 245 DHG Pharma bù nước, bổ sung chất điện giải, điều trị mất nước do tiêu chảy (20 gói x 4.1g)"
+  },
+  "A01": {
+    "tep": "images/A01.png",
+    "nguon": "https://www.pharmacity.vn/thuoc-ha-sot-giam-dau-paracetamol-500mg-5-vi-x-10-vien-hop.html",
+    "anhGoc": "https://prod-cdn.pharmacity.io/e-com/images/ecommerce/20250729065658-1-P13707_1.png?versionId=LGSNRL4LJjFCIakALCju5sEKfdeeN2I7",
+    "tenAnh": "Thuốc Paracetamol 500mg Mediplantex hạ sốt, giảm đau (5 vỉ x 10 viên)"
+  }
+}

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nhà thuốc Tiến An Toàn</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="anhthuoc.js" defer></script>
+    <script src="script.js" defer></script>
+<script src="taikhoan.js" defer></script>
+    <link rel="stylesheet" href="chat.css" />
+    <script src="chat.js" defer></script>
+  </head>
+  <body>
+    <header class="trangmenu">
+    <a class="logo" href="/" aria-label="Nhà thuốc Tiến An Toàn — trang bán hàng"><svg class="daucong" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M11 2h10v9h9v10h-9v9H11v-9H2V11h9Z"/></svg><span><small>Nhà thuốc</small>Tiến An Toàn</span></a>
+    <div class="taikhoan" data-nhanvien hidden><span><small>Nhân viên</small><strong data-tennhanvien></strong></span><button type="button" data-dangxuat>Đăng xuất</button></div>
+    <a class="vaonhanvien" href="/dangnhap.html" data-khach>Đăng nhập nhân viên</a>
+    <button type="button" class="nutmenu" aria-expanded="false" aria-controls="menuchinh"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span>Menu</span></button>
+    <nav id="menuchinh" class="menu" aria-label="Điều hướng chính"><a href="#trangchu" data-khach  class="chon" aria-current="page"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-8h6v8"/></svg><span>Trang chủ</span></a><a href="#sanpham" data-khach ><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="m15 15 6 6"/></svg><span>Sản phẩm</span></a><a href="/" data-nhanvien hidden  class="chon" aria-current="page"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10 5 3h14l2 7M4 10v11h16V10M3 10c0 3 5 3 5 0 0 3 4 3 4 0 0 3 4 3 4 0 0 3 5 3 5 0M9 21v-7h6v7"/></svg><span>Bán hàng</span></a>
+<a href="/donhang.html" data-nhanvien hidden ><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3ZM9 7h6M9 11h6M9 15h3"/></svg><span>Hóa đơn</span></a>
+<a href="/quanly.html" data-nhanvien hidden ><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 16 8-8M5 19a6 6 0 0 1 0-8l6-6a6 6 0 0 1 8 8l-6 6a6 6 0 0 1-8 0Z"/></svg><span>Thuốc & tồn kho</span></a>
+<a href="/nhapkho.html" data-nhanvien hidden ><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 7 9-4 9 4v14H3V7Zm0 0 9 4 9-4M12 11v10M8 5l9 4"/></svg><span>Phiếu nhập</span></a>
+<a href="/duocsi.html" data-nhanvien hidden ><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 21v-3a8 8 0 0 1 16 0v3M12 14v6M9 17h6"/></svg><span>Dược sĩ</span></a>
+<a href="/thongke.html" data-nhanvien hidden ><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3v18h17M8 17v-5M13 17V7M18 17V4"/></svg><span>Thống kê</span></a><a href="#giohang" ><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h3l3 13h11l3-10H6"/><circle cx="9" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg><span>Giỏ hàng (<span id="soluong">0</span>)</span></a></nav>
+  </header>
+    <main>
+      <section class="banner" id="trangchu" aria-labelledby="tieudetrang">
+        <div class="noidungbanner">
+          <h1 id="tieudetrang">Chăm sóc sức khỏe<br />cho cả gia đình.</h1>
+          <p>Tìm thuốc theo tên hoặc danh mục, xem giá và thêm vào giỏ hàng ngay trên website.</p>
+          <a class="nut" href="#sanpham">Khám phá sản phẩm <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+          <a class="xemgio" href="#giohang">Xem giỏ hàng</a>
+        </div>
+        <figure class="anhbanner" aria-label="Ảnh minh họa nhà thuốc">
+          <div class="khunganh">
+            <img class="anhchuyen hien" src="images/doingu-bacsi.jpg" alt="Đội ngũ bác sĩ và nhân viên y tế trong bệnh viện" width="1200" height="800" data-nguon="https://www.pexels.com/photo/health-care-professionals-smiling-at-the-camera-6129494/" data-tacgia="RDNE Stock project / Pexels" />
+            <img class="anhchuyen" src="images/banner-tiem-ngua.jpg" alt="Bé gái được nhân viên y tế dán băng lên cánh tay sau khi tiêm ngừa" width="1200" height="801" aria-hidden="true" data-nguon="https://www.pexels.com/photo/girl-getting-vaccinated-3992931/" data-tacgia="CDC / Pexels" />
+            <img class="anhchuyen" src="images/banner-thuoc.jpg" alt="Nhiều loại viên nén và viên nang với màu sắc, hình dạng khác nhau" width="1200" height="800" aria-hidden="true" data-nguon="https://www.pexels.com/photo/flatlay-shot-of-assorted-medicines-5723612/" data-tacgia="cottonbro studio / Pexels" />
+          </div>
+          <div class="dieukhienbanner" hidden>
+            <div class="chamanh" role="group" aria-label="Chọn ảnh banner">
+              <button type="button" aria-label="Ảnh 1: Đội ngũ y tế" aria-pressed="true"><span></span></button>
+              <button type="button" aria-label="Ảnh 2: Tiêm ngừa cho trẻ" aria-pressed="false"><span></span></button>
+              <button type="button" aria-label="Ảnh 3: Các loại thuốc" aria-pressed="false"><span></span></button>
+            </div>
+          </div>
+          <figcaption>Ảnh minh họa · <a id="nguonbanner" href="https://www.pexels.com/photo/health-care-professionals-smiling-at-the-camera-6129494/" target="_blank" rel="noopener noreferrer">RDNE Stock project / Pexels</a></figcaption>
+        </figure>
+      </section>
+      <div class="cuahang">
+      <section class="muc" id="sanpham">
+        <div class="daumuc">
+          <h2>Sản phẩm</h2>
+          <div class="loc">
+            <label>Tìm sản phẩm
+              <svg class="timicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="m15 15 6 6"/></svg><input id="tim" type="search" placeholder="Tìm sản phẩm" />
+            </label>
+            <label>Danh mục
+              <select id="nhom"><option value="">Tất cả</option></select>
+            </label>
+          </div>
+        </div>
+        <p class="ghichuanh">Ảnh chụp bao bì dùng để minh họa; hãng và quy cách chưa được xác định trong dữ liệu bài tập.</p>
+        <div class="danhsach" id="danhsach" aria-live="polite"></div>
+      </section>
+      <section class="muc giohang" id="giohang">
+        <h2>Giỏ hàng</h2>
+        <ul id="monhang"></ul>
+        <p aria-live="polite">Tổng tiền <strong id="tongtien">0 ₫</strong></p>
+        <form id="datdon" hidden>
+          <h3>Thông tin giao hàng</h3>
+          <label>Họ và tên
+            <input name="hoTen" required maxlength="30" autocomplete="name" />
+          </label>
+          <label>Số điện thoại
+            <input name="dienThoai" type="tel" required pattern="[0-9]{9,11}" autocomplete="tel" />
+          </label>
+          <label>Địa chỉ
+            <input name="diaChi" required maxlength="30" autocomplete="street-address" />
+          </label>
+          <button type="submit">Thanh toán</button>
+        </form>
+        <p id="thongbao" role="status"></p>
+      </section>
+      </div>
+    </main>
+    <footer>
+      <div class="chantrang">
+        <div>
+          <a class="logo" href="/#trangchu"><svg class="daucong" viewBox="0 0 32 32" aria-hidden="true"><path d="M11 2h10v9h9v10h-9v9H11v-9H2V11h9z" fill="currentColor"/></svg><span><small>Nhà thuốc</small>Tiến An Toàn</span></a>
+          <p>Tra cứu sản phẩm, lựa chọn thuốc và quản lý giỏ hàng trong một nơi.</p>
+        </div>
+        <nav aria-label="Liên kết cuối trang">
+          <h2>Khám phá</h2>
+          <a href="/">Trang chủ</a>
+          <a href="/#sanpham">Danh mục sản phẩm</a>
+          <a href="/#giohang">Giỏ hàng của bạn</a>
+          <a href="/quanly.html" data-nhanvien hidden>Quản lý thuốc</a><a href="/nhapkho.html" data-nhanvien hidden>Quản lý nhập kho</a>
+        <a href="/donhang.html" data-nhanvien hidden>Quản lý đơn hàng</a><a href="/duocsi.html" data-nhanvien hidden>Dược sĩ</a><a href="/thongke.html" data-nhanvien hidden>Thống kê</a></nav>
+        <div>
+          <h2>Mua hàng trên website</h2>
+          <ol>
+            <li>Tìm và chọn sản phẩm.</li>
+            <li>Điều chỉnh số lượng trong giỏ.</li>
+            <li>Điền thông tin và đặt hàng.</li>
+          </ol>
+          <p class="luuy">Hình ảnh bao bì dùng để minh họa.</p>
+        </div>
+      </div>
+      <div class="cuoitrang">
+        <span>Tiến An Toàn · Website bài tập</span>
+        <a href="#">Về đầu trang <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 20V4m-6 6 6-6 6 6"/></svg></a>
+      </div>
+    </footer>
+    <button id="mochat" class="mochat" type="button" aria-expanded="false" aria-controls="khungchat">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 11a8 8 0 0 1-8 8H5l-4 3V11a9 9 0 0 1 19 0Z"/><path d="M6 10h10M6 14h7"/></svg>Hỏi trợ lý AI
+    </button>
+    <section id="khungchat" class="khungchat" aria-labelledby="tieudechat" hidden>
+      <div class="dauchat"><div><h2 id="tieudechat">Trợ lý Tiến An Toàn</h2><p>AI hỗ trợ thông tin sản phẩm</p></div><button id="dongchat" type="button" aria-label="Đóng trò chuyện"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div>
+      <p class="ghichuchat">AI có thể trả lời sai, không thay thế tư vấn của dược sĩ hoặc bác sĩ. Nội dung chat được gửi tới Google Gemini; tránh gửi thông tin cá nhân.</p>
+      <div id="tinnhan" class="tinnhan" role="log" aria-live="polite" aria-relevant="additions text" aria-label="Nội dung trò chuyện"><p class="tinai">Chào bạn! Mình có thể giúp tìm thuốc, xem giá, tồn kho hoặc hướng dẫn đặt hàng. Bạn cần hỗ trợ gì?</p></div>
+      <div class="goiychat"><button type="button" data-cauhoi="Paracetamol giá bao nhiêu và còn hàng không?">Giá Paracetamol</button><button type="button" data-cauhoi="Hướng dẫn tôi đặt hàng trên website">Cách đặt hàng</button></div>
+      <form id="guichat" class="guichat"><label for="noidungchat">Tin nhắn của bạn</label><div><input id="noidungchat" type="text" required maxlength="1000" autocomplete="off" placeholder="Nhập câu hỏi…" /><button id="nutguichat" type="submit">Gửi</button></div></form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+.quanly { padding: 36px 32px 56px; min-height: 65vh; }
+.quanly h1 { font-size: 32px; margin: 0 0 10px; }
+.quanly h2 { font-size: 23px; margin-bottom: 18px; }
+.quanly section > .daumuc h2 { margin-bottom: 0; }
+.quanly .daumuc p { margin: 0; color: #52675a; max-width: 65ch; }
+.quanly .daumuc > label { display: grid; gap: 6px; font-size: 14px; min-width: 0; width: 380px; max-width: 100%; }
+#timduocsi { width: 100%; min-width: 0; }
+.quanly .ghichu a { text-decoration: underline; text-underline-offset: 3px; }
+.mucquanly { display: flex; gap: 28px; border-bottom: 1px solid #cdd9cc; margin-top: 28px; }
+.mucquanly a { padding: 12px 0; border-bottom: 2px solid transparent; font-size: 15px; }
+.mucquanly a[aria-current] { color: #205940; border-color: #205940; font-weight: 600; }
+.mucquanly a:hover { color: #205940; }
+#baoquanly { margin: 16px 0 24px; min-height: 26px; color: #52675a; }
+.quanly .loi { color: #943b27 !important; }
+.boLoc { display: grid; grid-template-columns: 1.5fr 1.2fr 1fr .7fr; gap: 16px; }
+.boLoc label, .truong label { display: grid; align-content: start; gap: 6px; font-size: 14px; }
+.boLoc input, .boLoc select, .truong input, .truong select { width: 100%; }
+.ghichu, .truong small { font-size: 13px; color: #52675a; }
+#demthuoc { margin-top: 22px; font-size: 14px; }
+.bangcuon { overflow-x: auto; }
+.quanly table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.quanly th { color: #36523f; background: #edf3eb; font-weight: 600; text-align: left; white-space: nowrap; }
+.quanly th, .quanly td { padding: 14px 12px; border-bottom: 1px solid #dce3dc; vertical-align: middle; }
+.quanly td small { display: block; font-size: 12px; color: #52675a; }
+.quanly td:first-child { min-width: 140px; }
+.quanly .so { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.quanly td:nth-child(2) { min-width: 150px; }
+.quanly .nutphu { background: transparent; border-color: #b6c7b8; color: #205940; font-size: 14px; font-weight: 500; }
+.quanly .nutphu:hover { background: #e8efe6; border-color: #205940; }
+.quanly .nutphu:disabled { color: #647069; background: #e1e6e0; }
+.tinhtrang { display: inline-block; padding: 3px 8px; font-size: 12px; background: #edf3eb; color: #36523f; white-space: nowrap; border-radius: 3px; }
+.tinhtrang.saphet { background: #f5ecd8; color: #75501b; }
+.tinhtrang.het, .tinhtrang.lech { background: #f5e7e1; color: #873e2b; }
+.khungnhap { margin-top: 28px; border: 1px solid #cdd9cc; border-radius: 4px; }
+.khungnhap summary { padding: 16px 20px; color: #205940; cursor: pointer; font-weight: 600; }
+.khungnhap summary:focus-visible { outline: 3px solid #9a6a17; outline-offset: 3px; }
+.khungnhap form { padding: 0 20px 12px; }
+.quanly fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+.truong { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 24px; padding: 10px 0 20px; }
+.quanly input[readonly] { background: #edf3eb; color: #52675a; }
+.xemanh img { display: block; width: 150px; height: 150px; object-fit: contain; background: #fff; border: 1px solid #dce3dc; padding: 8px; }
+.xemanh p { font-size: 13px; color: #52675a; overflow-wrap: anywhere; }
+.truong label { min-width: 0; }
+.thaotac { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
+.an { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media (max-width: 1000px) { .boLoc { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 760px) {
+  .quanly { padding: 28px 20px 40px; }
+  .quanly h1 { font-size: 28px; }
+  .mucquanly { gap: 20px; overflow-x: auto; white-space: nowrap; }
+  .mucquanly a { font-size: 14px; }
+  .truong { grid-template-columns: 1fr; gap: 16px; }
+  .khungnhap form { padding: 0 16px 12px; }
+  .khungnhap summary { padding: 16px; }
+  .quanly .daumuc { display: flex; }
+}
+@media (max-width: 420px) { .boLoc { grid-template-columns: 1fr; gap: 12px; } }

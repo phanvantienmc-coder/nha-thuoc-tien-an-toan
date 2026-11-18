@@ -1,0 +1,51 @@
+﻿.donhang { padding: 36px 32px; min-height: 65vh; }
+.donhang h1 { margin: 0 0 12px; font-size: 34px; }
+.donhang .daumuc p { font-size: 12px; letter-spacing: 1px; color: #52675a; }
+.donhang > label { display: block; margin: 28px 0 8px; }
+#timdon { width: 100%; max-width: 460px; }
+.locdon { display: flex; gap: 20px; flex-wrap: wrap; margin: 26px 0; }
+.locdon label { display: grid; gap: 6px; min-width: 0; font-size: 14px; }
+.locdon label:first-child { width: 460px; max-width: 100%; }
+.trangthaidon { padding: 2px 8px; border-radius: 3px; background: #edf3eb; color: #36523f; font-size: 13px; }
+.trangthaidon.cho_xu_ly { background: #f5ecd8; color: #75501b; }
+.trangthaidon.da_huy { background: #f5e7e1; color: #873e2b; }
+.xulydon { margin-top: 24px; }
+.xulydon fieldset { min-width: 0; padding: 16px 20px; border: 1px solid #cdd9cc; border-radius: 4px; }
+.xulydon legend { font-size: 17px; font-weight: 600; padding: 0 8px; }
+.xulydon button { margin: 12px 10px 8px 0; }
+.xulydon .nuthuy { color: #873e2b; background: transparent; border-color: #ba8c7d; }
+.xulydon .nuthuy:hover { background: #f5e7e1; }
+.xulydon small { display: block; color: #52675a; font-size: 13px; }
+#thongbao { color: #52675a; }
+#danhsach details { border-top: 1px solid #cdd9cc; padding: 4px 0; }
+#danhsach summary { cursor: pointer; padding: 18px 4px; display: list-item; }
+#danhsach summary span { display: inline-block; margin-left: 24px; }
+#danhsach summary:hover { background: #edf3eb; }
+#danhsach summary:focus-visible { outline: 2px solid #205940; }
+.chitiet { padding: 0 12px 20px; }
+.chitiet p { margin: 8px 0; }
+.bangcuon { overflow-x: auto; }
+.donhang table { width: 100%; border-collapse: collapse; margin: 18px 0; text-align: left; }
+.donhang th, .donhang td { padding: 12px; border-bottom: 1px solid #dce3dc; }
+.donhang th { background: #edf3eb; white-space: nowrap; }
+.donhang td { min-width: 100px; }
+.ghichu { color: #765621; font-size: 14px; }
+.phancong { margin-top: 28px; }
+.phancong fieldset { min-width: 0; border: 1px solid #cdd9cc; padding: 16px 20px 20px; border-radius: 4px; }
+.phancong legend { padding: 0 8px; font-size: 17px; font-weight: 600; }
+.phancong ul { list-style: none; padding: 0; margin: 0; }
+.phancong li { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid #dce3dc; }
+.phancong li > span { min-width: 0; overflow-wrap: anywhere; }
+.phancong small { display: block; font-size: 13px; color: #52675a; }
+.phancong label { display: grid; gap: 8px; margin: 18px 0 12px; font-size: 14px; }
+.phancong select { width: 100%; max-width: 520px; }
+.phancong p { font-size: 14px; color: #52675a; }
+.phancong .nutphu { flex-shrink: 0; font-size: 13px; color: #205940; background: transparent; border-color: #b6c7b8; }
+.phancong .nutphu:hover { background: #e8efe6; }
+@media (max-width: 760px) {
+  .donhang { padding: 28px 20px; }
+  #danhsach summary span { display: block; margin: 6px 0 0 20px; }
+  .donhang .daumuc { align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+  .phancong fieldset { padding: 12px; }
+  .phancong li { align-items: flex-start; flex-wrap: wrap; }
+}

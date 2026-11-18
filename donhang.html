@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đơn hàng · Nhà thuốc Tiến An Toàn</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="donhang.css">
+  <script src="donhang.js" defer></script>
+  <script src="taikhoan.js" defer></script>
+</head>
+<body>
+  <header class="trangmenu">
+    <a class="logo" href="/" aria-label="Nhà thuốc Tiến An Toàn — trang bán hàng"><svg class="daucong" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M11 2h10v9h9v10h-9v9H11v-9H2V11h9Z"/></svg><span><small>Nhà thuốc</small>Tiến An Toàn</span></a>
+    <div class="taikhoan" data-nhanvien hidden><span><small>Nhân viên</small><strong data-tennhanvien></strong></span><button type="button" data-dangxuat>Đăng xuất</button></div>
+    <a class="vaonhanvien" href="/dangnhap.html" data-khach>Đăng nhập nhân viên</a>
+    <button type="button" class="nutmenu" aria-expanded="false" aria-controls="menuchinh"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span>Menu</span></button>
+    <nav id="menuchinh" class="menu" aria-label="Điều hướng chính"><a href="/" data-nhanvien hidden ><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10 5 3h14l2 7M4 10v11h16V10M3 10c0 3 5 3 5 0 0 3 4 3 4 0 0 3 4 3 4 0 0 3 5 3 5 0M9 21v-7h6v7"/></svg><span>Bán hàng</span></a>
+<a href="/donhang.html" data-nhanvien hidden  class="chon" aria-current="page"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3ZM9 7h6M9 11h6M9 15h3"/></svg><span>Hóa đơn</span></a>
+<a href="/quanly.html" data-nhanvien hidden ><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 16 8-8M5 19a6 6 0 0 1 0-8l6-6a6 6 0 0 1 8 8l-6 6a6 6 0 0 1-8 0Z"/></svg><span>Thuốc & tồn kho</span></a>
+<a href="/nhapkho.html" data-nhanvien hidden ><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 7 9-4 9 4v14H3V7Zm0 0 9 4 9-4M12 11v10M8 5l9 4"/></svg><span>Phiếu nhập</span></a>
+<a href="/duocsi.html" data-nhanvien hidden ><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 21v-3a8 8 0 0 1 16 0v3M12 14v6M9 17h6"/></svg><span>Dược sĩ</span></a>
+<a href="/thongke.html" data-nhanvien hidden ><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3v18h17M8 17v-5M13 17V7M18 17V4"/></svg><span>Thống kê</span></a></nav>
+  </header>
+  <main class="donhang">
+    <div class="daumuc"><div><p>QUẢN LÝ BÁN HÀNG</p><h1>Đơn hàng</h1></div><button id="tailai" type="button">Tải lại danh sách</button></div>
+    <p>Xem hóa đơn và thông tin khách hàng đã lưu trong cơ sở dữ liệu.</p>
+    <div class="locdon"><label>Tìm đơn hàng<input id="timdon" type="search" placeholder="Mã đơn, tên khách hoặc số điện thoại"></label>
+    </div>
+    <p id="thongbao" role="status" aria-live="polite">Đang tải đơn hàng…</p>
+    <div id="danhsach"></div>
+  </main>
+  <footer><div class="cuoitrang"><span>Tiến An Toàn · Website bài tập</span><a href="/">Về trang bán hàng</a></div></footer>
+</body>
+</html>
